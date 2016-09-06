@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/share_options"
+        android:key="@string/key_share_options"/>
+    <EditTextPreference android:title="Share Subject"
+        android:key="key_share_subject"
+        android:summary="@string/summary_share_subject"/>
+    <EditTextPreference android:title="Share Text"
+        android:key="key_share_text"
+        android:summary="@string/summary_share_text"/>
+    <PreferenceCategory/>
+    <PreferenceCategory
+        android:title="@string/title_rendering_options"
+        android:key="@string/key_rendering_options"/>
+    <PreferenceScreen
+        android:key="@string/key_customize"
+        android:title="@string/title_customize_image"
+        android:summary="@string/summary_customize"
+        android:persistent="false">
+        <EditTextPreference
+            android:key="key_sketchiness"
+            android:summary="@string/summary_sketchiness"
+            android:title="@string/title_sketchiness" />
+        <EditTextPreference
+            android:key="key_saturation"
+            android:title="@string/title_saturation"
+            android:summary="@string/summary_saturation" />
+    </PreferenceScreen>
+    </PreferenceScreen>
